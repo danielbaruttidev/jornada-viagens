@@ -1,0 +1,29 @@
+/*Background
+botoes
+cores de textos */
+
+:root{
+    --backgrond-primary-color: #FFFFFF;
+    --backgrond-secondary-color: #F5F5F5;
+    --backgrond-tertiary-color: #000000; 
+
+    --button-primary-color: #8F0101;
+    --button-secondary-color: #B81515;
+
+    --text-primary-color: #222222;
+    --text-secondary-color: #FFFFFF;
+    
+}
+
+
+
+/*RESET CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  color:var(--button-primary-color)
+}

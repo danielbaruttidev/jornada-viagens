@@ -9,32 +9,21 @@ cores de textos */
   font-display: swap;
 }
 
-:root{
+:root {
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
 
-    --primary-color: #8F0101;
-    --secondary-color: #B81515;
+  --backgrond-primary-color: #ffffff;
+  --backgrond-secondary-color: #f5f5f5;
+  --backgrond-tertiary-color: #000000;
 
-    --backgrond-primary-color: #FFFFFF;
-    --backgrond-secondary-color: #F5F5F5;
-    --backgrond-tertiary-color: #000000; 
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
 
-    --text-primary-color: #222222;
-    --text-secondary-color: #FFFFFF;
-
-    --titles-weight: 700;
-    --text-weight: 400;
-    --menu-text-weight: 500;
-
-
-
-    
-    menu: 500
-    footer: 400
-    cards: 400/700
-
+  --titles-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
 }
-
-
 
 /*RESET CSS*/
 * {
@@ -43,8 +32,8 @@ cores de textos */
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-family: "Montserrat";
-  font-weight: var(--titles-weight) ;
+  font-weight: var(--titles-weight);
   color: var(--primary-color);
-} 
+}

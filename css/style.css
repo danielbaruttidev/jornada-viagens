@@ -2,17 +2,36 @@
 botoes
 cores de textos */
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
 :root{
+
+    --primary-color: #8F0101;
+    --secondary-color: #B81515;
+
     --backgrond-primary-color: #FFFFFF;
     --backgrond-secondary-color: #F5F5F5;
     --backgrond-tertiary-color: #000000; 
 
-    --button-primary-color: #8F0101;
-    --button-secondary-color: #B81515;
-
     --text-primary-color: #222222;
     --text-secondary-color: #FFFFFF;
+
+    --titles-weight: 700;
+    --text-weight: 400;
+    --menu-text-weight: 500;
+
+
+
     
+    menu: 500
+    footer: 400
+    cards: 400/700
+
 }
 
 
@@ -25,5 +44,7 @@ cores de textos */
 }
 
 h1{
-  color:var(--button-primary-color)
-}
+  font-family: "Montserrat";
+  font-weight: var(--titles-weight) ;
+  color: var(--primary-color);
+} 

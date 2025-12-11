@@ -20,6 +20,13 @@ header {
   margin-top: 24px;
 }
 
+input[type="checkbox"]:checked ~ nav{
+  display: block;
+
+} /* Quando o checkbox estiver marcado (:checked),
+   o nav que vem depois dele (~) muda para display: block,
+   fazendo o menu aparecer */
+
 nav{
   display: none;
 

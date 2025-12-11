@@ -1,13 +1,26 @@
 header {
-  width: 100%;
-  height: 138px;
   background-color: var(--backgrond-tertiary-color);
+  display: flex; /* Ativa o flexbox no container */
+  flex-direction: row; /* Coloca os itens em linha (lado a lado) */
+  justify-content: space-between; /* Espalha os itens: 1º na esquerda, último na direita e espaço igual entre eles */
+  align-items: flex-start; /* flex-start = alinha todos os itens do flexbox 
+   no topo (início) do eixo vertical */
+  padding: 38px 48px;
 }
 
 .logo {
-  display: inline-block;
+  display: inline-block; /*o elemento fica em linha como um texto, mas ainda permite definir largura, altura, margin e padding, diferente do inline comum */
   width: 68px;
   height: 64px;
-  margin: 37px 0 0 48px;
-  
+
+
+}
+
+.navigation-menu{
+  margin-top: 24px;
+}
+
+nav{
+  display: none;
+
 }

@@ -6,28 +6,53 @@ header {
   align-items: flex-start; /* flex-start = alinha todos os itens do flexbox 
    no topo (início) do eixo vertical */
   padding: 38px 48px;
+  position: relative; /* relative: mantém posição normal, mas permite mover com top/left 
+   e serve de referência para elementos absolute. */
+
+
+
 }
 
 .logo {
   display: inline-block; /*o elemento fica em linha como um texto, mas ainda permite definir largura, altura, margin e padding, diferente do inline comum */
   width: 68px;
   height: 64px;
-
-
 }
 
-.navigation-menu{
+.navigation-menu {
   margin-top: 24px;
 }
 
-input[type="checkbox"]:checked ~ nav{
-  display: block;
-
-} /* Quando o checkbox estiver marcado (:checked),
+/* Quando o checkbox estiver marcado (:checked),
    o nav que vem depois dele (~) muda para display: block,
    fazendo o menu aparecer */
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;/* absolute = sai do fluxo da página (não ocupa espaço)
+   e é posicionado usando top/left/etc em relação ao elemento pai "relative". */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--backgrond-tertiary-color);
+} 
 
-nav{
+
+nav {
   display: none;
+}
+
+.list-links{
+  list-style:none ;
 
 }
+
+.list-links li{
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+
+}
+
